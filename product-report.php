@@ -21,7 +21,37 @@
                     
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card card-primary">
+                            <div class="cardtop mt-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    <form action="simple-results.html">
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-lg" placeholder="Type your keywords here">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                                    </div>
+                                    <div class="col-md-2">
+                                    <a href="" class="btn btn-primary btn mt-1 ">This Month</a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <span class="d-flex">From: <input type="date" class="form-control ml-3"></span>
+
+                                    </div>
+                                    <div class="col-md-3">
+                                    <span class="d-flex">To:<input type="date" class="form-control ml-3"></span>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card card-primary mt-4">
                                 <div class="card-header">
                                     <h3 class="card-title">Product Report</h3>
                                 </div>

@@ -29,5 +29,31 @@
                 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
                     background-color: rgb(115, 61, 217) !important;
                 }
+                [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:focus, [class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link.active:hover {
+                    background-color: #474e54;
+                    color: #fff;
+                }
+                .card-primary:not(.card-outline)>.card-header {
+    background-color: rgb(115, 61, 217) !important;
+}
+.page-item.active .page-link {
+    background-color:rgb(115, 61, 217);
+    border-color: rgb(115, 61, 217);
+}
+.btn-primary {
+    background-color: rgb(115, 61, 217);
+    border-color: rgb(115, 61, 217);
+}
+.btn-outline-primary {
+    color: rgb(115, 61, 217);
+    border-color: rgb(115, 61, 217);
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
+}
+input[type="search"] {
+    font-size: 16px;
+}
         </style>
     </head>

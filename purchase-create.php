@@ -110,25 +110,25 @@
                                                             <h4 class="card-title">Billed By</h4>
                                                         </div>
                                                         <div class="card-body">
-                                                            <div class="form-group row">
+                                                            <div class="form-group row mb-0">
                                                                 <label for="inputEmail3" class="col-sm-4 col-form-label">Name</label>
                                                                 <div class="col-sm-8">
                                                                     <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group row">
+                                                            <div class="form-group row mb-0">
                                                                 <label for="inputEmail3" class="col-sm-4 col-form-label">Address</label>
                                                                 <div class="col-sm-8">
                                                                     <textarea class="address form-control form-control-border" rows="2"></textarea>
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group row">
+                                                            <div class="form-group row mb-0">
                                                                 <label for="inputEmail3" class="col-sm-4 col-form-label">GSTIN</label>
                                                                 <div class="col-sm-8">
                                                                     <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-group row">
+                                                            <div class="form-group row mb-0">
                                                                 <label for="inputEmail3" class="col-sm-4 col-form-label">State</label>
                                                                 <div class="col-sm-8">
                                                                     <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
