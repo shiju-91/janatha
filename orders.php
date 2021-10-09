@@ -20,14 +20,14 @@
                 <div class="container-fluid">
                     <div class="row mt-4">
                         <div class="col-md-11 my-4">
-                            <a href="purchase-create.php" class="btn btn-primarybtn btn-sm btn-outline-primary float-right">Create New</a>
+                            <a href="invoice.php" class="btn btn-primarybtn btn-sm btn-outline-primary float-right">Create New</a>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-primary">
                                 <div class="card-header">
-                                    <h3 class="card-title">Purchases</h3>
+                                    <h3 class="card-title">Orders</h3>
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
@@ -37,12 +37,12 @@
                                             <th style="width: 10px">#</th>
                                             <th>Invoice No</th>
                                             <th>Invoice Date</th>
-                                            <th>Buyer Details</th>
+                                            <th>Recipient Details</th>
                                             <th>Transportation Details</th>
                                             <th>Total Amount</th>
                                             <th>Payment Mode</th>
-                                            <th>Credit Balance</th>
-                                            <th>View Purchase</th>
+                                            <th>Balance</th>
+                                            <th>View Invoice</th>
                                         </tr>
                                         </thead>
                                         <tbody>

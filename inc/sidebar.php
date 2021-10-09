@@ -64,13 +64,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="brand.html" class="nav-link">
+                            <a href="purchase.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="type.html" class="nav-link">
+                            <a href="purchase-create.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Create</p>
                             </a>
@@ -93,9 +93,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="purchase.php" class="nav-link">
+                            <a href="orders.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Purchases</p>
+                                <p>Orders</p>
                             </a>
                         </li>
                     </ul>
