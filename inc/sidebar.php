@@ -55,6 +55,16 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                    <a href="stock.php" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Stocks
+                        </p>
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
@@ -110,19 +120,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="brand.html" class="nav-link">
+                            <a href="product-report.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Product Report</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="type.html" class="nav-link">
+                            <a href="sales-report.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Sales Report</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="type.html" class="nav-link">
+                            <a href="purchase-report.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Purchase Report</p>
                             </a>

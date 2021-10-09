@@ -22,4 +22,12 @@
         <link rel="stylesheet" href="/assets/plugins/daterangepicker/daterangepicker.css">
         <!-- summernote -->
         <link rel="stylesheet" href="/assets/plugins/summernote/summernote-bs4.min.css">
+        <style>
+            .bg-primary {
+                background-color: rgb(115, 61, 217) !important;
+                }
+                .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
+                    background-color: rgb(115, 61, 217) !important;
+                }
+        </style>
     </head>

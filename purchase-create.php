@@ -3,6 +3,70 @@
     <?php
         require_once('inc/header.php');
     ?>
+    <style>
+        .sc-cJSrbW.huuTkr {
+            height: 100%;
+            cursor: pointer;
+            line-height: 2.625rem;
+            padding: 0px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .rupay {
+            height: 100%;
+            cursor: pointer;
+            line-height: 2.625rem;
+            padding: 0px;
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            padding-right: 10px;
+        }
+        table.table.boxField td{
+
+            position: relative;
+        }
+        button.sc-dnqmqq.dTHIBF.sc-eTpRJs.bNDTaW {
+            border: 0;
+            display: block;
+            margin: 20px;
+            padding: 8px 18px;
+            border-radius: 5px;
+        }
+        .addNew {
+                padding: 20px 0;
+        }
+        .addNew button {
+            display: inline-flex;
+            outline: none;
+            line-height: 1.5;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: inherit;
+            font-weight: 400;
+            -webkit-box-pack: center;
+            justify-content: center;
+            vertical-align: middle;
+            -webkit-box-align: center;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px dashed rgb(180, 194, 213);
+            height: 3rem;
+            padding: 0px 1.5rem;
+            white-space: nowrap;
+            width: 100%;
+            background: #fff;
+            color: rgb(97, 113, 131);
+            appearance: none !important;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+    </style>
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Preloader -->
@@ -43,7 +107,7 @@
                                                 <div class="col-md-6">
                                                     <div class="card">
                                                         <div class="card-header">
-                                                            <h4 class="card-title">Deatails of Seller</h4>
+                                                            <h4 class="card-title">Billed By</h4>
                                                         </div>
                                                         <div class="card-body">
                                                             <div class="form-group row">
@@ -173,18 +237,11 @@
                                     </div> -->
                                     <!-- <hr> -->
                                     <br>
-                                    <div class="row mb-2">
-                                        <div class="input-group input-group-sm col-md-1 offset-md-11">
-                                            <input type="number" min="1" id="purchase-column-count" class="form-control" value="1">
-                                            <span class="input-group-append">
-                                                <button type="button" class="btn btn-info btn-flat pruchase-add">Add</button>
-                                            </span>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="row">
-                                        <table class="table table-bordered purchase-table">
+                                        <table class="table boxField bg-white purchase-table">
                                             <thead class="bg-primary">
-                                                <th style="width:300px">Name of Product</th>
+                                                <th style="width: 250px;">Item</th>
                                                 <th>Tax</th>
                                                 <th>Nos</th>
                                                 <th>Qty in Sqm</th>
@@ -194,153 +251,138 @@
                                                 <th>Net Value</th>
                                                 <th>CGST</th>
                                                 <th>SGST</th>
+                                                <th>GST</th>
                                                 <th>Total Bill Amount</th>
                                                 <th>Total Amount</th>
+
                                             </thead>
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
+                                                        <select name="" id="" class="form-control form-control-border">
+                                                            <option value="">Select</option>
                                                             <option name="" id="">Plywood 12mm 8x4</option>
                                                         </select>
                                                     </td>
-                                                    <td>18</td>
+                                                    <td>
+                                                        <input type="number"  class="form-control form-control-border" id="gst" placeholder="" value="18">
+                                                        <div class="sc-cJSrbW huuTkr">%</div>
+                                                    </td>
+                                                    
                                                     <td>
                                                         <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
+                                                
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                 </tr>
+                                                
                                                 <tr>
                                                     <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
+                                                        <select name="" id="" class="form-control form-control-border">
+                                                            <option value="">Select</option>
                                                             <option name="" id="">Plywood 12mm 8x4</option>
                                                         </select>
                                                     </td>
-                                                    <td>18</td>
+                                                    <td>
+                                                        <input type="number"  class="form-control form-control-border" id="gst" placeholder="" value="18">
+                                                        <div class="sc-cJSrbW huuTkr">%</div>
+                                                    </td>
+                                                    
                                                     <td>
                                                         <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
+                                                
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                 </tr>
-                                                <tr id="last-tr-purchase">
-                                                    <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
-                                                            <option name="" id="">Plywood 12mm 8x4</option>
-                                                        </select>
-                                                    </td>
-                                                    <td>18</td>
-                                                    <td>
-                                                        <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                    <td>
-                                                        <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                                    </td>
-                                                </tr>
-                                                <tr >
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th>12</th>
-                                                    <th>6578</th>
-                                                    <th></th>
-                                                    <th>12334</th>
-                                                    <th>6775</th>
-                                                    <th>3423</th>
-                                                    <th>3424</th>
-                                                    <th>242</th>
-                                                    <th>3442</th>
-                                                    <th>4322</th>
-                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="addNew">
+                                            <button class="AddnewButton btn pruchase-add" type="button">+ Add New Item</button>
+                                        </div>
+                                        <table class="table table-bordered ">
+                                           
+                                            <tbody>
                                                 <tr>
                                                     <td colspan="3">
                                                         
@@ -479,55 +521,68 @@
         $(document).ready(function(){
             
             $(document).on('click', '.pruchase-add', function() {
-                let extraItem = [];
-                let count = $('#purchase-column-count').val();
-                for (let index = 1; index <= count; index++) {
-                    extraItem.push(`<tr>
-                                            <td>
-                                                <select name="product_id" id="" class="form-control">
-                                                    <option value="" selected disabled>Select</option>
-                                                    <option name="" id="">Plywood 12mm 8x4</option>
-                                                </select>
-                                            </td>
-                                            <td>18</td>
-                                            <td>
-                                                <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
-                                            </td>
-                                            <td>
-                                                <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-        
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-        
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-        
-                                            </td>
-                                            <td>
-                                                <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-        
-                                            </td>
-                                            <td>
-                                                <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                            </td>
-                                            <td>
-                                                <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                            </td>
-                                            <td>
-                                                <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                            </td>
-                                            <td>
-                                                <input type="text"  class="form-control form-control-border" id="inputEmail3" placeholder="">
-                                            </td>
-                                        </tr>`
-                                        );
-                }
-                $('#last-tr-purchase').after(...extraItem);
+                
+                let extraItem = `<tr>
+                                    <td>
+                                        <select name="" id="" class="form-control form-control-border">
+                                            <option value="">Select</option>
+                                            <option name="" id="">Plywood 12mm 8x4</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number"  class="form-control form-control-border" id="gst" placeholder="" value="18">
+                                        <div class="sc-cJSrbW huuTkr">%</div>
+                                    </td>
+                                    
+                                    <td>
+                                        <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
+                                    </td>
+                                
+                                    <td>
+                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
+
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
+
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                    </td>
+                                    <td>
+                                        <div class="rupay">₹</div>
+                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                    </td>
+                                </tr>`;
+
+                
+                $('.purchase-table tr:last').after(extraItem);
             });
         })
     </script>

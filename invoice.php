@@ -3,6 +3,72 @@
     <?php
         require_once('inc/header.php');
     ?>
+
+<style>
+        .sc-cJSrbW.huuTkr {
+            height: 100%;
+            cursor: pointer;
+            line-height: 2.625rem;
+            padding: 0px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .rupay {
+            height: 100%;
+            cursor: pointer;
+            line-height: 2.625rem;
+            padding: 0px;
+            position: absolute;
+            left: 12px;
+            top: 10px;
+            padding-right: 10px;
+        }
+        table.table.boxField td{
+
+            position: relative;
+        }
+        button.sc-dnqmqq.dTHIBF.sc-eTpRJs.bNDTaW {
+            border: 0;
+            display: block;
+            margin: 20px;
+            padding: 8px 18px;
+            border-radius: 5px;
+        }
+        .addNew {
+                padding: 20px 0;
+        }
+        .addNew button {
+            display: inline-flex;
+            outline: none;
+            line-height: 1.5;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: inherit;
+            font-weight: 400;
+            -webkit-box-pack: center;
+            justify-content: center;
+            vertical-align: middle;
+            -webkit-box-align: center;
+            align-items: center;
+            border-radius: 4px;
+            border: 1px dashed rgb(180, 194, 213);
+            height: 3rem;
+            padding: 0px 1.5rem;
+            white-space: nowrap;
+            width: 100%;
+            background: #fff;
+            color: rgb(97, 113, 131);
+            appearance: none !important;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+    </style>
+
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Preloader -->
@@ -170,225 +236,262 @@
                                     </div>
                                     <hr>
                                     <br>
-                                    <div class="row mb-2">
-                                        <div class="input-group input-group-sm col-md-1 offset-md-11">
-                                            <input type="text" class="form-control" value="1">
-                                            <span class="input-group-append">
-                                                <button type="button" class="btn btn-info btn-flat">Add</button>
-                                            </span>
-                                        </div>
-                                    </div>
+                                    
                                     <div class="row">
-                                        <table class="table table-bordered">
+                                        <table class="table boxField bg-white invoice-table">
                                             <thead class="bg-primary">
-                                                <th>Sl. No</th>
-                                                <th style="width:300px">Name of Product</th>
+                                                <th style="width: 250px;">Item</th>
                                                 <th>HSN Code</th>
                                                 <th>Qty</th>
-                                                <th>In Sqm</th>
+                                                <th>Qty in Sqm</th>
                                                 <th>Rate</th>
                                                 <th>Amount</th>
                                                 <th>Discount</th>
                                                 <th>Net Value</th>
                                                 <th>CGST</th>
                                                 <th>SGST</th>
+                                                <th>GST</th>
                                                 <th>Total Amount</th>
+
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
                                                     <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
+                                                        <select name="" id="" class="form-control form-control-border">
+                                                            <option value="">Select</option>
                                                             <option name="" id="">Plywood 12mm 8x4</option>
                                                         </select>
                                                     </td>
-                                                    <td>9412</td>
                                                     <td>
                                                         <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
+                                                
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>1</td>
                                                     <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
+                                                        <select name="" id="" class="form-control form-control-border">
+                                                            <option value="">Select</option>
                                                             <option name="" id="">Plywood 12mm 8x4</option>
                                                         </select>
                                                     </td>
-                                                    <td>9412</td>
                                                     <td>
                                                         <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
+                                                
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td>1</td>
                                                     <td>
-                                                        <select name="product_id" id="" class="form-control">
-                                                            <option value="" selected disabled>Select</option>
+                                                        <select name="" id="" class="form-control form-control-border">
+                                                            <option value="">Select</option>
                                                             <option name="" id="">Plywood 12mm 8x4</option>
                                                         </select>
                                                     </td>
-                                                    <td>9412</td>
                                                     <td>
                                                         <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                     </td>
+                                                
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
 
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                     <td>
-                                                        <input type="text" readonly class="form-control form-control-border" id="inputEmail3" placeholder="">
-
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="rupay">₹</div>
+                                                        <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                     </td>
                                                 </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="addNew">
+                                            <button class="AddnewButton btn pruchase-add invoice-item-add" type="button">+ Add New Item</button>
+                                        </div>
 
+                                        <table class="table table-bordered">
+                                            <tbody>
                                                 <tr>
-                                                    <td colspan="8" rowspan="2">
-                                                        <label>Total Invoice Amount In Words:</label>
-                                                        <input type="text" value="" class="form-control form-control-border" id="">
+                                                    <td rowspan="2" colspan="2">
+                                                        Total Invoice Amount in Words : <input type="text" placeholder="Amount in words" class="form-control form-control-border">
                                                     </td>
-                                                    <td colspan="2">
-                                                        Total amount before tax :
+                                                    <td style="width: 250px;">
+                                                        Total Amount Before Tax :
                                                     </td>
-                                                    <td colspan="2"></td>
+                                                    <td style="width: 200px;">
+                                                        <input type="number" disabled class="form-control form-control-border">
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">Add.CGST:</td>
-                                                    <td colspan="2"></td>
+                                                    <td>
+                                                        Add.CGST : 
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="4" rowspan="3">
-                                                        Bank Details
+                                                    <td rowspan="3">
+                                                        <label for="">Bank Details</label>
                                                     </td>
-                                                    <td colspan="4" rowspan="6">
+                                                    <td rowspan="6" style="width:300px">
                                                         Seal
                                                     </td>
-                                                    <td colspan="2">Add.SGST</td>
-                                                    <td colspan="2"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">Add.IGST</td>
-                                                    <td colspan="2"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2">TAx amout GST</td>
-                                                    <td colspan="2"></td>
-
+                                                    <td>
+                                                        Add.SGST : 
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="4" rowspan="3">
-                                                        Terms and conditions
+                                                    <td>
+                                                        Add.IGST : 
                                                     </td>
-                                                    <td colspan="4">Total Amount after tax</td>
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <td colspan="2">
-                                                        GST payable on reverse charges
+                                                    <td>
+                                                        Tax (GST) : 
                                                     </td>
-                                                    <td colspan="2">
-
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
                                                     </td>
                                                 </tr>
-                                                <tr style="height: 250px;">
-                                                    <td colspan="4">
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        Terms & Conditions : 
+                                                    </td>
+                                                    <td>
+                                                        Total Amount After Tax: 
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        GST Payable on Reverse Charge : 
+                                                    </td>
+                                                    <td>
+                                                        <input type="number" disabled class="form-control form-control-border">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="height:250px">
                                                         Certified that
                                                     </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="8">
-                                                        Balnce Amount :
-                                                    </td>
-                                                    <td colspan="4">
-                                                        <input type="text" class="form-control form-control-border" id="inputEmail3" placeholder="0.00">
-                                                    </td>
+                                                    
                                                 </tr>
 
                                             </tbody>
-                                            <tfoot></tfoot>
                                         </table>
                                     </div>
                                     <hr>
@@ -411,6 +514,69 @@
     <?php
         require_once('inc/footer.php');
     ?>
+
+<script>
+    $(document).ready(function(){
+        
+        $(document).on('click', '.invoice-item-add', function() {
+            
+            let extraItem = `<tr>
+                                <td>
+                                    <select name="" id="" class="form-control form-control-border">
+                                        <option value="">Select</option>
+                                        <option name="" id="">Plywood 12mm 8x4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
+                                </td>
+                                <td>
+                                    <input type="number" min="0" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
+                                </td>
+                            
+                                <td>
+                                    <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
+
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number" class="form-control form-control-border" id="rate" placeholder="1">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number" class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                </td>
+                                <td>
+                                    <div class="rupay">₹</div>
+                                    <input type="number"  class="form-control form-control-border" id="inputEmail3" placeholder="">
+                                </td>
+                            </tr>`;
+
+            
+            $('.invoice-table tr:last').after(extraItem);
+        });
+    })
+</script>
     
 </body>
 </html>
