@@ -4,7 +4,6 @@
         require_once('inc/header.php');
     ?>
 
-
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Preloader -->
@@ -26,7 +25,7 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Invoice Create</h3>
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body" id="printable_div">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <label for="">GST IN: 32FTYPS1381E1Z8</label>
@@ -434,7 +433,7 @@
                                     <div class="row">
                                         <div class="col-md-4 offset-md-8 ">
                                             <button class="btn btn-primary btn-sm float-right">Save and Print</button>
-                                            <button class="btn btn-outline-secondary btn-sm float-right mx-2">Print</button>
+                                            <button id="print_btn" class="btn btn-outline-secondary btn-sm float-right mx-2">Print</button>
                                         </div>
                                     </div>
                                 </div>
@@ -511,6 +510,13 @@
             
             $('.invoice-table tr:last').after(extraItem);
         });
+
+        // $(document).on('click', '#print_btn', function(){
+        //     $("#printable_div").print({
+        //         globalStyles : false,
+        //         mediaPrint : false,
+        //     });
+        // })
     })
 </script>
     
