@@ -4,76 +4,12 @@
         require_once('inc/header.php');
     ?>
 
-<style>
-        .sc-cJSrbW.huuTkr {
-            height: 100%;
-            cursor: pointer;
-            line-height: 2.625rem;
-            padding: 0px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-        }
-        .rupay {
-            height: 100%;
-            cursor: pointer;
-            line-height: 2.625rem;
-            padding: 0px;
-            position: absolute;
-            left: 12px;
-            top: 10px;
-            padding-right: 10px;
-        }
-        table.table.boxField td{
-
-            position: relative;
-        }
-        button.sc-dnqmqq.dTHIBF.sc-eTpRJs.bNDTaW {
-            border: 0;
-            display: block;
-            margin: 20px;
-            padding: 8px 18px;
-            border-radius: 5px;
-        }
-        .addNew {
-                padding: 20px 0;
-        }
-        .addNew button {
-            display: inline-flex;
-            outline: none;
-            line-height: 1.5;
-            font-size: 16px;
-            cursor: pointer;
-            text-decoration: none;
-            font-family: inherit;
-            font-weight: 400;
-            -webkit-box-pack: center;
-            justify-content: center;
-            vertical-align: middle;
-            -webkit-box-align: center;
-            align-items: center;
-            border-radius: 4px;
-            border: 1px dashed rgb(180, 194, 213);
-            height: 3rem;
-            padding: 0px 1.5rem;
-            white-space: nowrap;
-            width: 100%;
-            background: #fff;
-            color: rgb(97, 113, 131);
-            appearance: none !important;
-        }
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-        }
-    </style>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake" src="assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
         </div>
 
         <?php

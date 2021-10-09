@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <img src="assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">Janatha</span>
     </a>
     <!-- Sidebar -->
@@ -18,8 +18,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                    <a href="users.php" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
                             Manage Staff
                         </p>
@@ -27,7 +27,7 @@
                 </li>
                 <li class="nav-item menu-open">
                     <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-table"></i>
+                        <i class="nav-icon fas fa-baby-carriage"></i>
                         <p>
                             Catlog
                             <i class="fas fa-angle-left right"></i>
@@ -56,7 +56,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="stock.php" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="nav-icon fas fa-database"></i>
                         <p>
                             Stocks
                         </p>
@@ -89,7 +89,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-table"></i>
+                        <i class="nav-icon fas fa-donate"></i>
                         <p>
                             Sales
                             <i class="fas fa-angle-left right"></i>
@@ -112,7 +112,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-table"></i>
+                        <i class="nav-icon fas fa-book"></i>
                         <p>
                             Reports
                             <i class="fas fa-angle-left right"></i>
@@ -141,7 +141,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="pages/widgets.html" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
+                        <i class="nav-icon fas fa-cog"></i>
                         <p>
                             Settings
                         </p>

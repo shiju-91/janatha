@@ -1,5 +1,7 @@
       <!-- jQuery -->
 <script src="/assets/plugins/jquery/jquery.min.js"></script>
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+
 <!-- Bootstrap 4 -->
 <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- DataTables  & Plugins -->
@@ -19,6 +21,8 @@
 <script src="/assets/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/assets/dist/js/demo.js"></script>
+<script src="/assets/plugins/chart.js/Chart.min.js"></script>
+
     <script>
         $(function () {
             $("#example1").DataTable({
