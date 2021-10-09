@@ -19,7 +19,7 @@
             <section class="content">
                 <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 mb-4">
+                    <div class="col-md-8 offset-md-2 mb-4 mt-4">
                         <a href="type-create.php"class="btn btn-primarybtn btn-sm btn-outline-primary float-right">View All</a>
                     </div>
                 </div>
