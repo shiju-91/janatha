@@ -121,5 +121,12 @@
 input[type="search"] {
     font-size: 16px;
 }
+.invoiceArea label {
+    font-size: 14px;
+}
+.invoiceArea .form-control{
+
+    height: 20px;
+}
         </style>
     </head>
