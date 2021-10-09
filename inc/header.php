@@ -91,7 +91,6 @@
                 -webkit-appearance: none;
                 margin: 0;
             }
-                }
                 .sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active {
                     background-color: rgb(115, 61, 217) !important;
                 }
