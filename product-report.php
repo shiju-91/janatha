@@ -46,6 +46,11 @@
                                     <span class="d-flex">To:<input type="date" class="form-control ml-3"></span>
 
                                     </div>
+                                    <div class="col-md-1">
+                                    <a href="" class="btn btn-success btn mt-1 ">Excel</a>
+
+
+                                    </div>
 
                                 </div>
                             </div>

@@ -103,7 +103,7 @@
                                     <hr>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="row">
+                                            <div class="row invoiceArea">
                                                 <div class="col-md-6">
                                                     <div class="card">
                                                         <div class="card-header">
@@ -390,19 +390,19 @@
                                                             <label for="inputEmail3" class=" col-form-label">Transportation Details</label>
                                                             
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Vehicle</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">From</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">To</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="">
@@ -410,25 +410,25 @@
                                                         </div>
                                                     </td>
                                                     <td colspan="4">
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Discount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Handling</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Fright</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Transport</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
@@ -437,43 +437,43 @@
                                                     </td>
                                                     <td colspan="5">
                                                         
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Net Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Net Bill Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">CGST Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">SGST Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">GST Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Total Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
                                                             </div>
                                                         </div>
-                                                        <div class="form-group row">
+                                                        <div class="form-group row mb-0">
                                                             <label for="inputEmail3" class="col-sm-4 col-form-label">Total Bill Amount</label>
                                                             <div class="col-sm-8">
                                                                 <input type="email" class="form-control form-control-border" id="inputEmail3" placeholder="" value="0">
